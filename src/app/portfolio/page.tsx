@@ -7,41 +7,42 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import nextConfig from "../../../next.config";
 
 
 const photos = [
   {
-    src: "/img/birthday-cake.jpg",
+    src: `${nextConfig.basePath}/img/birthday-cake.jpg`,
     width: 2455,
     height: 1760,
     alt: "birthday cake",
   },
   {
-    src: "/img/bubbles.jpg",
+    src: `${nextConfig.basePath}/img/bubbles.jpg`,
     width: 1760,
     height: 3120,
     alt: "bubbles",
   },
   {
-    src: "/img/river.jpg",
+    src: `${nextConfig.basePath}/img/river.jpg`,
     width: 3120,
     height: 1760,
     alt: "river",
   },
   {
-    src: "/img/white-roses.jpg",
+    src: `${nextConfig.basePath}/img/white-roses.jpg`,
     width: 3120,
     height: 1760,
     alt: "white roses",
   },
   {
-    src: "/img/sun-spot.jpg",
+    src: `${nextConfig.basePath}/img/sun-spot.jpg`,
     width: 1760,
     height: 3120,
     alt: "sun spot",
   },
   {
-    src: "/img/vines.jpg",
+    src: `${nextConfig.basePath}/img/vines.jpg`,
     width: 1760,
     height: 3120,
     alt: "vines",
