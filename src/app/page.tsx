@@ -1,3 +1,5 @@
+import nextConfig from "../../next.config";
+
 export default function Home() {
 
   return (
@@ -5,7 +7,7 @@ export default function Home() {
       <section
         aria-label="Hero"
         className="relative w-full min-h-[70vh] flex items-center bg-center bg-cover"
-        style={{ backgroundImage: `url('/img/birthday-cake.jpg')` }}
+        style={{ backgroundImage: `url('${nextConfig.basePath}/img/birthday-cake.jpg')` }}
       >
         {/* dark overlay for readability */}
         <div className="absolute inset-0 bg-black/45" />
