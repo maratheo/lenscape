@@ -1,28 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond } from "next/font/google";
+import { IM_Fell_Double_Pica } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const imFellDoublePica = IM_Fell_Double_Pica({
+  variable: "--font-im-fell-double-pica",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
-const cormorantGaramond = Cormorant_Garamond({
-  variable: "--font-cormorant-garamond",
-  subsets: ["latin"],
-  weight: ["600"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -37,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-  <body className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${cormorantGaramond.variable} antialiased`}>
+  <body className={`${imFellDoublePica.variable} antialiased`}>
         <header className="w-full bg-background/80 backdrop-blur-sm border-b border-border">
           <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
             <Link href="/" className="text-xl font-semibold text-foreground">
