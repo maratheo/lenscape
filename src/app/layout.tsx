@@ -22,13 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
   <body className={`${imFellDoublePica.variable} antialiased`}>
-        <header className="w-full bg-background/80 backdrop-blur-sm border-b border-border">
+        <header className="w-full bg-background/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
             <Link href="/" className="text-xl font-semibold text-foreground">
               Lenscape
             </Link>
             <nav>
-              <ul className="flex gap-6 items-center text-sm">
+              <ul className="flex gap-6 items-center">
                 <li>
                   <Link href="/" className="hover:underline">
                     Home
