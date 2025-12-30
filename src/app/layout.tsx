@@ -21,12 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-  <body className={`${imFellDoublePica.variable} antialiased`}>
+      <body className={`${imFellDoublePica.variable} antialiased`}>
         <header className="w-full bg-background/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
             <Link href="/" className="text-xl font-semibold text-foreground">
               Lenscape
             </Link>
+
             <nav>
               <ul className="flex gap-6 items-center">
                 <li>
@@ -51,7 +52,12 @@ export default function RootLayout({
                 </li>
               </ul>
             </nav>
+            <a className="px-4 py-2 bg-stone-800 text-[rgb(255,251,244)] font-im-fell-double-pica text-sm tracking-wide hover:bg-stone-700 transition-all duration-300 shadow-sm hover:shadow-md" href="https://docs.google.com/forms/d/e/1FAIpQLSc9BB6GobF0SZtveCfMxI4sGimjrXnBAqqGMti1itTiDctyKw/viewform"
+              target="_blank">
+                Book a Session
+              </a>
           </div>
+
         </header>
 
         <main>{children}</main>
