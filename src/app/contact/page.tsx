@@ -5,8 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
   return (
-    <div className="flex flex-1 flex-col justify-center items-center min-h-[70vh] bg-[rgb(255, 251, 244)]">
-      <h1>Send us a message</h1>
+    <div className="flex flex-1 flex-col gap-10 justify-center items-center min-h-[70vh] bg-[rgb(255, 251, 244)]">
+      <h1 className="text-3xl">Send us a message</h1>
       <form
         action="https://formspree.io/f/mnjqggjl"
         method="POST"

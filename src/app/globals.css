@@ -124,7 +124,13 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background;
     font-family: var(--font-im-fell-double-pica), serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: rgba(118,83,66,0.71); 
+  }
+  h1 {
+    font-size: 2rem;
   }
 }
