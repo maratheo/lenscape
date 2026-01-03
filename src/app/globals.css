@@ -133,4 +133,7 @@
   h1 {
     font-size: 2rem;
   }
+  p {
+    @apply my-5;
+  }
 }
