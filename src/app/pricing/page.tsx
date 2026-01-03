@@ -6,7 +6,7 @@ export default function Pricing() {
   return (
     <>
       <h1 className="text-center text-[1.5rem] mt-5 mb-5">Packages</h1>
-      <div className="flex flex-wrap md:flex-nowrap justify-center gap-8 px-50">
+      <div className="flex flex-wrap md:flex-nowrap justify-center gap-8">
         <div className="max-w-50 min-w-40">
           <img src="/img/packages/individual.jpg" alt="Individual Package" />
           <h2 className="text-2xl mt-4 text-center">INDIVIDUAL</h2>
