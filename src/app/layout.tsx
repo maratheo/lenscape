@@ -28,8 +28,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`px-3 ${imFellDoublePica.variable} antialiased`}>
-        <header className="w-full bg-background/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+      <body className={`${imFellDoublePica.variable} antialiased`}>
+        <header className="px-3 w-full bg-background/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
           <div className="max-w-5xl mx-auto py-4 flex items-center justify-between">
             <Link href="/" className="text-xl font-semibold text-foreground">
               Lenscape
@@ -97,7 +97,53 @@ export default function RootLayout({
 
         </header>
 
-        <main className="max-w-5xl mx-auto">{children}</main>
+        <main className="max-w-5xl mx-auto px-3">{children}</main>
+
+        <footer className="mt-16 bg-stone-800 text-[rgb(255,251,244)] py-8">
+          <div className="max-w-5xl mx-auto px-3">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+              {/* Brand Section */}
+              <div className="text-center md:text-left">
+                <h3 className="text-2xl font-im-fell-double-pica mb-2 text-[rgb(255,251,244)]">Lenscape</h3>
+                <p className="text-sm my-3 text-stone-300">Capturing life's precious moments</p>
+              </div>
+
+              {/* Quick Links */}
+              <nav className="text-center md:text-left">
+                <ul className="flex flex-wrap gap-4 md:gap-6 justify-center">
+                  {navItems.map((item) => (
+                    <li key={item.href}>
+                      <Link 
+                        href={item.href} 
+                        className="text-stone-300 hover:text-[rgb(255,251,244)] transition-colors duration-200"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+
+              {/* Contact/Social Section */}
+              <div className="text-center md:text-right">
+                <a 
+                  className="inline-block px-4 py-2 bg-[rgb(255,251,244)] text-stone-800 font-im-fell-double-pica text-sm tracking-wide hover:bg-stone-200 transition-all duration-300 shadow-sm hover:shadow-md"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc9BB6GobF0SZtveCfMxI4sGimjrXnBAqqGMti1itTiDctyKw/viewform"
+                  target="_blank"
+                >
+                  Book a Session
+                </a>
+              </div>
+            </div>
+
+            {/* Copyright */}
+            <div className="mt-3 pt-6 border-t border-stone-700 text-center">
+              <p className="text-sm my-0 text-stone-400">
+                © {new Date().getFullYear()} Lenscape Photography. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
