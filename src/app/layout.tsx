@@ -29,8 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${imFellDoublePica.variable} antialiased`}>
-        <header className="px-3 w-full bg-background/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-          <div className="max-w-5xl mx-auto py-4 flex items-center justify-between">
+        <header className="w-full bg-background/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+          <div className="max-w-5xl mx-auto px-3 py-4 flex items-center justify-between">
             <Link href="/" className="text-xl font-semibold text-foreground">
               Lenscape
             </Link>
@@ -99,7 +99,7 @@ export default function RootLayout({
 
         <main className="max-w-5xl mx-auto px-3">{children}</main>
 
-        <footer className="mt-16 bg-stone-800 text-[rgb(255,251,244)] py-8">
+        <footer className="bg-stone-800 text-[rgb(255,251,244)] py-8">
           <div className="max-w-5xl mx-auto px-3">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               {/* Brand Section */}
