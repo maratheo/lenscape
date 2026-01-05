@@ -405,38 +405,10 @@ const photos = [
 
 export default function HomepageGallery() {
   const [index, setIndex] = React.useState(-1);
-  const [isGalleryVisible, setIsGalleryVisible] = React.useState(false);
-  const galleryRef = React.useRef<HTMLDivElement>(null);
-
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsGalleryVisible(true);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (galleryRef.current) {
-      observer.observe(galleryRef.current);
-    }
-
-    return () => {
-      if (galleryRef.current) {
-        observer.unobserve(galleryRef.current);
-      }
-    };
-  }, []);
 
   return (
     <div 
-      ref={galleryRef}
-      className={`min-h-[70vh] bg-[rgb(255, 251, 244)] py-[15px] transition-opacity duration-1000 ${
-        isGalleryVisible ? 'opacity-100' : 'opacity-0'
-      }`}
+      className={`py-[15px]`}
     >
       <div className="container mx-auto" style={{ maxWidth: '1400px' }}>
         <PhotoAlbum
