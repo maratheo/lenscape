@@ -8,6 +8,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Image from "next/image";
+import nextConfig from "../../next.config";
 
 // Component to handle individual photo fade-in animations
 const AnimatedPhoto = ({ photo, imageProps }: { photo: any; imageProps: any }) => {
@@ -40,7 +41,7 @@ const AnimatedPhoto = ({ photo, imageProps }: { photo: any; imageProps: any }) =
     <Image
       {...imageProps}
       ref={imgRef}
-      src={imageProps.src}
+      src={`${nextConfig.basePath}${imageProps.src}`}
       alt={imageProps.alt || ""}
       width={photo.width}
       height={photo.height}
