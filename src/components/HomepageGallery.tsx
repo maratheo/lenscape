@@ -41,18 +41,17 @@ const AnimatedPhoto = ({ photo, imageProps }: { photo: any; imageProps: any }) =
     <Image
       {...imageProps}
       ref={imgRef}
-      src={`${nextConfig.basePath}${imageProps.src}`}
+      src={`${imageProps.src}`}
       alt={imageProps.alt || ""}
       width={photo.width}
       height={photo.height}
-      className={`transition-opacity duration-700 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
+      className={`transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'
+        }`}
     />
   );
 };
 
-const photos = [
+let photos = [
   {
     src: `/img/gallery/img010.jpg`,
     width: 1760,
@@ -403,11 +402,18 @@ const photos = [
   },
 ];
 
+photos = photos.map((photo) => {
+  return {
+    ...photo,
+    src: `${nextConfig.basePath}${photo.src}`,
+  }
+});
+
 export default function HomepageGallery() {
   const [index, setIndex] = React.useState(-1);
 
   return (
-    <div 
+    <div
       className={`py-[15px]`}
     >
       <div className="container mx-auto" style={{ maxWidth: '1400px' }}>
