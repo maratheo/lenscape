@@ -15,7 +15,7 @@ const imFellDoublePica = IM_Fell_Double_Pica({
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/about", label: "About" },
+  // { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -28,7 +28,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${imFellDoublePica.variable} antialiased`}>
+      <body className={`${imFellDoublePica.variable} antialiased min-h-screen flex flex-col`}>
         <header className="w-full bg-background/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-3 py-4 flex items-center justify-between">
             <Link href="/" className="text-xl font-semibold text-foreground">
@@ -97,7 +97,7 @@ export default function RootLayout({
 
         </header>
 
-        <main className="max-w-5xl mx-auto px-3">{children}</main>
+        <main className="max-w-5xl mx-auto px-3 flex-1 w-full">{children}</main>
 
         <footer className="bg-stone-800 text-[rgb(255,251,244)] py-8">
           <div className="max-w-5xl mx-auto px-3">
