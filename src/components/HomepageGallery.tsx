@@ -8,7 +8,6 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Image from "next/image";
-import nextConfig from "../../next.config";
 
 // Component to handle individual photo fade-in animations
 const AnimatedPhoto = ({ photo, imageProps }: { photo: any; imageProps: any }) => {
@@ -402,12 +401,7 @@ let photos = [
   },
 ];
 
-photos = photos.map((photo) => {
-  return {
-    ...photo,
-    src: `${nextConfig.basePath}${photo.src}`,
-  }
-});
+
 
 export default function HomepageGallery() {
   const [index, setIndex] = React.useState(-1);

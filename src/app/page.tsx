@@ -1,4 +1,3 @@
-import nextConfig from "../../next.config";
 import HomepageGallery from "@/components/HomepageGallery";
 
 export default function Home() {
@@ -22,7 +21,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <img className="hidden md:inline w-[40%] h-auto object-cover relative z-0 animate-[slideInRight_0.8s_ease-out]" src={`${nextConfig.basePath}/img/sophie.jpg`} alt="" />
+          <img className="hidden md:inline w-[40%] h-auto object-cover relative z-0 animate-[slideInRight_0.8s_ease-out]" src="/img/sophie.jpg" alt="" />
         </div>
       </section>
       <HomepageGallery />
