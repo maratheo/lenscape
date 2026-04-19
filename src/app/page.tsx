@@ -14,10 +14,10 @@ export default function Home() {
             </div>
             <div className="px-6 pr-10 animate-[fadeIn_1s_ease-in_0.4s_both]">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada lectus vitae gravida lobortis. Pellentesque luctus, leo vel dapibus facilisis, lacus ipsum mattis augue, quis dignissim quam urna sit amet libero. Suspendisse magna est, dapibus ac massa ac, sollicitudin porttitor turpis.
+                Josh is a student at the University of Illinois Urbana-Champaign, where he is double majoring in Marketing and Information Systems with a minor in International Business. He has been operating his own photography business since his sophomore year of high school, giving him over half a decade of hands-on experience in the industry. This academic background in business and systems allows him to manage the technical and logistical side of his shoots with the same precision he applies to his creative work.
               </p>
               <p>
-                Maecenas vitae luctus elit. Donec metus elit, rutrum vitae scelerisque in, commodo at dui. Quisque ac pellentesque erat. Nulla non dictum nisl. Integer metus justo, pulvinar ac ipsum a, scelerisque consequat augue.
+                His portfolio is diverse, spanning senior portraits, graduation ceremonies, anniversaries, live concerts, and high-action sports. Regardless of the setting, Josh's primary goal is to make his clients feel comfortable and empowered while in front of the camera. He focuses on removing the stress from the photography process, combining a professional eye for detail with a straightforward approach that ensures every client walks away with high-quality, authentic images.
               </p>
             </div>
           </div>
